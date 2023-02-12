@@ -23,5 +23,5 @@
                 "levizoesch\\laravelsetenvironment\\SetEnvironmentVariableServiceProvider"
             ]
         }
-    },
+    }
 }
