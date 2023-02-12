@@ -52,4 +52,11 @@ class SetEnvironmentVariable extends Command
 
         return true;
     }
+    
+    private function isEnvKeySet(string $envKey, ?string $envFileContents = null): bool
+    {
+        $envFileContents = $envFileContents ?? file_get_contents(app()->environmentFilePath());
+
+        return (bool)preg_match("/^{$envKey}=.*?[\s$]/m", $envFileContents);
+    }
 }
