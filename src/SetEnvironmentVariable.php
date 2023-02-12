@@ -1,4 +1,4 @@
-
+<?php
 namespace App\Console\Commands\Admin;
 
 use Illuminate\Console\Command;
