@@ -6,10 +6,6 @@ Composer command
 composer require levizoesch/laravelsetenvironment
 ```
 
-add command to your `app\Console\Kernal.php`
-
-```php
-    protected $commands = [
-        SetEnvironmentVariable::class
-    ];
+```artisan
+php artisan env:set MyVariable MyValue
 ```
