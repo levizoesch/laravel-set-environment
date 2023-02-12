@@ -7,5 +7,5 @@ composer require levizoesch/laravelsetenvironment
 ```
 
 ```artisan
-php artisan env:set MyVariable MyValue
+php artisan env:set BUILD_ID 1.15.86
 ```
