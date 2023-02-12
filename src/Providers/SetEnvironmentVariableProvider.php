@@ -20,7 +20,7 @@ class SetEnvironmentVariableProvider extends ServiceProvider
 
             resource_path('app/Console/Commands/')
 
-        ], 'translations');
+        ], 'commands');
        
 
     }
