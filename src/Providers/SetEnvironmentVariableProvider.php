@@ -1,4 +1,4 @@
-namespace LeviZoesch\LaravelSetEnvironment;
+namespace LeviZoesch\LaravelSetEnvironment\Providers;
 
  
 
