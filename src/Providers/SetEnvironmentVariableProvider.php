@@ -16,9 +16,9 @@ class SetEnvironmentVariableProvider extends ServiceProvider
 
         $this->publishes([
 
-            __DIR__.'/example/translations' =>
+            __DIR__.'/src' =>
 
-            resource_path('lang/vendor/example')
+            resource_path('app/')
 
         ], 'translations');
        
