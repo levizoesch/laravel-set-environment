@@ -1,0 +1,16 @@
+{
+    "name": "levizoesch/LaravelSetEnvironment",
+    "type": "project",
+    "description": "A simple command to set environment variables via command line. I wrote this to assist in pipeline builds.",
+    "keywords": [
+        "Levi Zoesch",
+        "laravel",
+        "laravel commands",
+        "laravel helpers",
+        "Laravel Set Environment"
+    ],
+  "require": {
+        "php": "^8.0"
+  }
+}
+  
