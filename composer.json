@@ -15,6 +15,7 @@
     "autoload": {
         "psr-4" : {
             "LeviZoesch\\LaravelSetEnvironment\\": "src/"
-        }
+        },
+        "files": [ "src/SetEnvironmentVariableServiceProvider.php" ]
     }
 }
