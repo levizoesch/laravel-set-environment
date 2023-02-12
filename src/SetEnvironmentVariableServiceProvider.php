@@ -1,6 +1,5 @@
 <?php
-
-namespace LeviZoesch\LaravelSetEnvironment;
+namespace levizoesch\laravelsetenvironment;
 
 use Illuminate\Support\ServiceProvider;
 use LeviZoesch\LaravelSetEnvironment\SetEnvironmentVariable;
