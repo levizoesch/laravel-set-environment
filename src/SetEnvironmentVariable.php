@@ -1,5 +1,5 @@
 <?php
-namespace App\Console\Commands;
+namespace LeviZoesch\LaravelSetEnvironment;
 
 use Illuminate\Console\Command;
 
