@@ -20,7 +20,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "LeviZoesch\\LaravelSetEnvironment\\SetEnvironmentVariableProvider"
+                "LeviZoesch\\LaravelSetEnvironment\\Providers\\SetEnvironmentVariableProvider"
             ]
         }
     }
