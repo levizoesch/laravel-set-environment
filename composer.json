@@ -16,12 +16,5 @@
         "psr-4" : {
             "LeviZoesch\\LaravelSetEnvironment\\": "src/"
         }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "\\SetEnvironmentVariableServiceProvider"
-            ]
-        }
     }
 }
