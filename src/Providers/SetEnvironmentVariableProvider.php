@@ -1,5 +1,5 @@
 <?php
-namespace LeviZoesch\LaravelSetEnvironment\Providers;
+namespace Providers;
 
  
 
