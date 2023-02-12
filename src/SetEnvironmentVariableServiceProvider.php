@@ -2,7 +2,7 @@
 namespace levizoesch\laravelsetenvironment;
 
 use Illuminate\Support\ServiceProvider;
-use LeviZoesch\LaravelSetEnvironment\SetEnvironmentVariable;
+use levizoesch\laravelsetenvironment\SetEnvironmentVariable;
 
 class SetEnvironmentVariableServiceProvider extends ServiceProvider
 {
