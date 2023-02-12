@@ -18,7 +18,7 @@ class SetEnvironmentVariableProvider extends ServiceProvider
 
             __DIR__.'/src' =>
 
-            resource_path('app/')
+            resource_path('app/Console/Commands/')
 
         ], 'translations');
        
