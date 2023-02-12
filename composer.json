@@ -12,13 +12,10 @@
   "require": {
         "php": "^8.0"
   },
-    "scripts": {
-        "post-install-cmd": [
-            "cp src/SetEnvironmentVariable.php /App/Console/Commands/"
-        ],
-        "post-update-cmd": [
-            "cp src/SetEnvironmentVariable.php /App/Console/Commands/"
-        ]
+    "autoload": {
+        "psr-4" : {
+            "SetEnvironmentVariable": "src"
+        }
     }
 
 
