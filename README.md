@@ -3,7 +3,7 @@ A simple command to set a Laravel env variable, and value.
 
 Composer command
 ```composer
-composer require levizoesch/laravelsetenvironment
+composer require levizoesch/laravel-set-environment
 ```
 
 ```artisan
