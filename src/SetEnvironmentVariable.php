@@ -5,13 +5,18 @@ use Illuminate\Console\Command;
 
 class SetEnvironmentVariable extends Command
 {
-    protected $signature = 'env:set {key} {value}';
+       protected $signature = 'env:set {key} {value} {--quotes}';
     protected $description = 'Set an environment variable';
 
     public function handle(): void
     {
         $key = $this->argument('key');
         $value = $this->argument('value');
+
+        // Check if the --quotes flag is provided
+        if ($this->option('quotes')) {
+            $value = "\"$value\"";
+        }
 
         $env[$key] = $value;
         $this->setEnvValues($env);
@@ -33,7 +38,7 @@ class SetEnvironmentVariable extends Command
         if (count($values) > 0) {
             foreach ($values as $envKey => $envValue) {
                 if ($this->isEnvKeySet($envKey, $envFileContents)) {
-                    $envFileContents = preg_replace("/^{$envKey}=.*?[\s$]/m", "{$envKey}={$envValue}\n", $envFileContents);
+                    $envFileContents = preg_replace("/^{$envKey}=.*?[\s$]/m", "{$envKey}={$envValue}", $envFileContents);
 
                     $this->info("Updated {$envKey} with new value in your `.env` file.");
                 } else {
@@ -59,4 +64,5 @@ class SetEnvironmentVariable extends Command
 
         return (bool)preg_match("/^{$envKey}=.*?[\s$]/m", $envFileContents);
     }
+
 }
